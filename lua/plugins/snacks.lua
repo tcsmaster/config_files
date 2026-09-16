@@ -1,12 +1,17 @@
 return {
-  { "folke/snacks.nvim",
-  opts = { explorer = { enabled = false } }, },
+  { "folke/snacks.nvim", opts = { explorer = { enabled = false } } },
   {
     "folke/noice.nvim",
-     opts = {
+    opts = {
+      routes = {
+        {
+          filter = { event = "msg_show", find = "Enter passphrase" },
+          opts = { skip = true },
+        },
+      },
       notify = {
-      enabled = false,
+        enabled = false,
+      },
     },
   },
-  }
 }

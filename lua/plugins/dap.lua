@@ -50,7 +50,7 @@ return {
         end,
         args = {}, -- provide arguments if needed
         cwd = "${workspaceFolder}",
-        stopAtBeginningOfMainSubprogram = false,
+        stopAtBeginningOfMainSubprogram = true,
       },
       {
         name = "Select and attach to process",
